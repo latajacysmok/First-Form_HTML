@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularze</title>
+    <meta name="description" content="Moje pierwsze zetknięcie z formularzami">
+    <meta name = "keywords" content="budowa, zasada działania, formularz, form, fieldset">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+  </head>
+
+  <body>
+    <form action="http://www.jakaswitryna.com/review.php" method="get">
+      <fieldset>
+        <legend>
+          Szczegóły konta:
+        </legend>
+        <label>
+          Imię:
+          <input type="text" name="name" size="30" maxlenght="100">
+        </label>
+        <br/>
+        <label>
+          E-mail:
+          <input type="email" name="email" size="30" maxlenght="100">
+        </label>
+        <br/>
+      </fieldset>
+      <br/>
+      <fieldset>
+        <legend>
+          Kilka informacji o Tobie:
+        </legend>
+        <p>
+          <label for="hear-about">
+            Jak się o nas dowiedziałeś?
+          </label>
+          <select name="referrer" id="hear-about">
+            <option value="google">z Googla</option>
+            <option value="friend">od znajomego</option>
+            <option value="advert">z reklamy</option>
+            <option value="other">w inny sposób</option>
+          </select>
+        </p>
+        <p>
+          Czy odwiedzisz nas ponownie?
+          <br/>
+          <label>
+            <input type="radio" name="rating" value="yes" />
+            Tak
+          </label>
+          <label>
+            <input type="radio" name="rating" value="no" />
+            Nie
+          </label>
+          <label>
+            <input type="radio" name="rating" value="maybe" />
+            Może
+          </label>
+        </p>
+        <p>
+          <label for="comments">
+            Komentarz
+          </label>
+          <br/>
+          <textarea rows="4" cols="40" id="comments">
+            
+          </textarea>
+        </p>
+        <label>
+          <input type="checkbox" name="subscribe" checked="checked" />
+          Chcę być informowany o aktualizacjach.
+        </label>
+        <br/>
+        <input type="submit" value="Prześlij informacje" />
+      </fieldset>
+    </form>         
+  </body>
+</html>
